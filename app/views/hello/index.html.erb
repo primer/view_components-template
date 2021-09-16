@@ -1,0 +1,155 @@
+
+<%= render Primer::BoxComponent.new(display: :flex, justify_content: :center, align_items: :center,  bg: :info, w: :full, p: 5, style: "height: 100vh") do |component| %>
+    <%= render Primer::BoxComponent.new(bg: :canvas, direction: :column, display: :flex, border: true, box_shadow: :large, border_radius: 2, style: "width: 297px") do |component| %>
+            <%= render Primer::BoxComponent.new(display: :flex, py: 2, pl: 3, pr: 2, w: :full, ) do |component| %>
+                    <%= render Primer::BoxComponent.new(flex: 1, display: :flex, align_items: :center) do |component| %>
+                        <%= render (Primer::HeadingComponent.new(tag: :h5)) { "Switch branches/tags" } %>
+                    <% end %>
+                    <%= render(Primer::IconButton.new(icon: :x, "aria-label": "Close")) %>
+            <% end %>
+
+            <%= render Primer::BoxComponent.new(display: :flex, px: 2, w: :full) do |component| %>
+                <form class="subnav-search width-full ml-0" action="/action_page.php">
+                    <input type="search" class="form-control input-s subnav-search-input width-full subnav-search-input-wide" placeholder="Find or create a branch" autofocus />
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16" class="subnav-search-icon" style="top: 8px; left: 9px; fill: currentColor;"><path fill-rule="evenodd" d="M11.5 7a4.499 4.499 0 11-8.998 0A4.499 4.499 0 0111.5 7zm-.82 4.74a6 6 0 111.06-1.06l3.04 3.04a.75.75 0 11-1.06 1.06l-3.04-3.04z"></path></svg>
+                </form>
+            <% end %>
+
+            <%= render Primer::BoxComponent.new(display: :flex, flex: 1, direction: :column) do |component| %>
+
+                <nav class="UnderlineNav">
+                    <div class="UnderlineNav-body" role="tablist">
+                    <button class="UnderlineNav-item" role="tab" type="button" aria-selected="true">
+                        <span>Branches</span>
+                        <%= render(Primer::CounterComponent.new(count: 134)) %>
+                    </button>
+                    <button class="UnderlineNav-item" role="tab" type="button">
+                        <span>Tags</span>
+                        <%= render(Primer::CounterComponent.new(count: 45)) %>
+                    </button>
+                    </div>
+                </nav>
+
+            <% end %>
+
+            <%= render Primer::BoxComponent.new(w: :full, style: "height: 320px; max-height: 320px; overflow-y: scroll") do |component| %>
+                
+                <!-- Item START -->
+                <%= render Primer::BoxComponent.new(display: :flex, border: :bottom, px: 2, align_items: :center, w: :full, style: "height: 36px;") do |component| %>
+                    <%= render Primer::BoxComponent.new(display: :flex, align_items: :center, w: :full) do |component| %>
+                            <%= render Primer::BoxComponent.new(display: :flex, pl: 2, color: :icon_success, style: "width: 30px;") do |component| %>
+                                <%= render(Primer::OcticonComponent.new(:check)) %>
+                            <% end %>
+                            <%= render(Primer::Beta::Text.new(flex: 1)) { "main" } %>
+                            <%= render(Primer::LabelComponent.new( scheme: :info, mr: 1)) { "Default" } %>
+                    <% end %>
+                <% end %>
+                <!-- Item END -->
+
+                <!-- Item START -->
+                <%= render Primer::BoxComponent.new(display: :flex, border: :bottom, px: 2, align_items: :center, w: :full, style: "height: 36px;") do |component| %>
+                    <%= render Primer::BoxComponent.new(display: :flex, align_items: :center, w: :full) do |component| %>
+                            <%= render Primer::BoxComponent.new(display: :flex, pl: 2, color: :icon_success, style: "width: 30px;") %>
+                            <%= render(Primer::Beta::Text.new(flex: 1)) { "develop" } %>
+                    <% end %>
+                <% end %>
+                <!-- Item END -->
+
+                <!-- Item START -->
+                <%= render Primer::BoxComponent.new(display: :flex, border: :bottom, px: 2, align_items: :center, w: :full, style: "height: 36px;") do |component| %>
+                    <%= render Primer::BoxComponent.new(display: :flex, align_items: :center, w: :full) do |component| %>
+                            <%= render Primer::BoxComponent.new(display: :flex, pl: 2, color: :icon_success, style: "width: 30px;") %>
+                            <%= render(Primer::Beta::Text.new(flex: 1)) { "feature/redesign" } %>
+                    <% end %>
+                <% end %>
+                <!-- Item END -->
+
+                <!-- Item START -->
+                <%= render Primer::BoxComponent.new(display: :flex, border: :bottom, px: 2, align_items: :center, w: :full, style: "height: 36px;") do |component| %>
+                    <%= render Primer::BoxComponent.new(display: :flex, align_items: :center, w: :full) do |component| %>
+                            <%= render Primer::BoxComponent.new(display: :flex, pl: 2, color: :icon_success, style: "width: 30px;") %>
+                            <%= render(Primer::Beta::Text.new(flex: 1)) { "bug/legacy-update" } %>
+                    <% end %>
+                <% end %>
+                <!-- Item END -->
+
+                <!-- Item START -->
+                <%= render Primer::BoxComponent.new(display: :flex, border: :bottom, px: 2, align_items: :center, w: :full, style: "height: 36px;") do |component| %>
+                    <%= render Primer::BoxComponent.new(display: :flex, align_items: :center, w: :full) do |component| %>
+                            <%= render Primer::BoxComponent.new(display: :flex, pl: 2, color: :icon_success, style: "width: 30px;") %>
+                            <%= render(Primer::Beta::Text.new(flex: 1)) { "quick-fix" } %>
+                    <% end %>
+                <% end %>
+                <!-- Item END -->
+
+                <!-- Item START -->
+                <%= render Primer::BoxComponent.new(display: :flex, border: :bottom, px: 2, align_items: :center, w: :full, style: "height: 36px;") do |component| %>
+                    <%= render Primer::BoxComponent.new(display: :flex, align_items: :center, w: :full) do |component| %>
+                            <%= render Primer::BoxComponent.new(display: :flex, pl: 2, color: :icon_success, style: "width: 30px;") %>
+                            <%= render(Primer::Beta::Text.new(flex: 1)) { "staging" } %>
+                    <% end %>
+                <% end %>
+                <!-- Item END -->
+
+                <!-- Item START -->
+                <%= render Primer::BoxComponent.new(display: :flex, border: :bottom, px: 2, align_items: :center, w: :full, style: "height: 36px;") do |component| %>
+                    <%= render Primer::BoxComponent.new(display: :flex, align_items: :center, w: :full) do |component| %>
+                            <%= render Primer::BoxComponent.new(display: :flex, pl: 2, color: :icon_success, style: "width: 30px;") %>
+                            <%= render(Primer::Beta::Text.new(flex: 1)) { "pre-production" } %>
+                    <% end %>
+                <% end %>
+                <!-- Item END -->
+
+                <!-- Item START -->
+                <%= render Primer::BoxComponent.new(display: :flex, border: :bottom, px: 2, align_items: :center, w: :full, style: "height: 36px;") do |component| %>
+                    <%= render Primer::BoxComponent.new(display: :flex, align_items: :center, w: :full) do |component| %>
+                            <%= render Primer::BoxComponent.new(display: :flex, pl: 2, color: :icon_success, style: "width: 30px;") %>
+                            <%= render(Primer::Beta::Text.new(flex: 1)) { "infran-5" } %>
+                    <% end %>
+                <% end %>
+                <!-- Item END -->
+
+                <!-- Item START -->
+                <%= render Primer::BoxComponent.new(display: :flex, border: :bottom, px: 2, align_items: :center, w: :full, style: "height: 36px;") do |component| %>
+                    <%= render Primer::BoxComponent.new(display: :flex, align_items: :center, w: :full) do |component| %>
+                            <%= render Primer::BoxComponent.new(display: :flex, pl: 2, color: :icon_success, style: "width: 30px;") %>
+                            <%= render(Primer::Beta::Text.new(flex: 1)) { "feature/dropdown" } %>
+                    <% end %>
+                <% end %>
+                <!-- Item END -->
+
+                <!-- Item START -->
+                <%= render Primer::BoxComponent.new(display: :flex, border: :bottom, px: 2, align_items: :center, w: :full, style: "height: 36px;") do |component| %>
+                    <%= render Primer::BoxComponent.new(display: :flex, align_items: :center, w: :full) do |component| %>
+                            <%= render Primer::BoxComponent.new(display: :flex, pl: 2, color: :icon_success, style: "width: 30px;") %>
+                            <%= render(Primer::Beta::Text.new(flex: 1)) { "experiment" } %>
+                    <% end %>
+                <% end %>
+                <!-- Item END -->
+
+                <!-- Item START -->
+                <%= render Primer::BoxComponent.new(display: :flex, border: :bottom, px: 2, align_items: :center, w: :full, style: "height: 36px;") do |component| %>
+                    <%= render Primer::BoxComponent.new(display: :flex, align_items: :center, w: :full) do |component| %>
+                            <%= render Primer::BoxComponent.new(display: :flex, pl: 2, color: :icon_success, style: "width: 30px;") %>
+                            <%= render(Primer::Beta::Text.new(flex: 1)) { "release/1.23" } %>
+                    <% end %>
+                <% end %>
+                <!-- Item END -->
+
+                <!-- Item START -->
+                <%= render Primer::BoxComponent.new(display: :flex, px: 2, align_items: :center, w: :full, style: "height: 36px;") do |component| %>
+                    <%= render Primer::BoxComponent.new(display: :flex, align_items: :center, w: :full) do |component| %>
+                            <%= render Primer::BoxComponent.new(display: :flex, pl: 2, color: :icon_success, style: "width: 30px;") %>
+                            <%= render(Primer::Beta::Text.new(flex: 1)) { "release/1.23-beta" } %>
+                    <% end %>
+                <% end %>
+                <!-- Item END -->
+
+            <% end %>
+
+            <%= render Primer::BoxComponent.new(display: :flex, p: 2, w: :full, border: :top,) do |component| %>
+                    <%= render(Primer::ButtonComponent.new(variant: :small, w: :full)) { "View all branches" } %>
+            <% end %>
+
+    <% end %>
+<% end %>
