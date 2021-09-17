@@ -2,7 +2,7 @@
         <% # HEADER %>
         <%= render(Primer::OcticonComponent.new(icon: "mark-github", size: :medium, color: :icon_primary)) %>
         <% # CODING BOX %>
-        <%= render Primer::BoxComponent.new(bg: :canvas_inverse, direction: :column, display: :flex, border: true, w: :full, border_color: :primary,  border_width: 1, border_radius: 2, p: 4, my: 6, style: "max-width: 600px; height: 300px") do |component| %>
+        <%= render Primer::BoxComponent.new(bg: :canvas_inverse, direction: :column, display: :flex, w: :full, border_radius: 2, p: 4, my: 6, style: "max-width: 600px; height: 300px") do |component| %>
             <% # CODE LINE %>
             <%= render Primer::BoxComponent.new(mb: 2, color: :text_inverse, display: :flex) do |component| %>
                 <%= render Primer::BoxComponent.new(display: :flex, style: "width: 20px; min-width: 20px; margin-top: 2px") do |component| %>
