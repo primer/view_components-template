@@ -2,7 +2,7 @@
 
 The quickest way to test out or prototype something in [Primer ViewComponents](https://primer.style/view-components/) without having to set up a new project is by using this template. 
 
-<img width="902" alt="Frame 1" src="https://user-images.githubusercontent.com/980622/133768843-cefd742f-dc93-474f-826d-9481468e064a.png">
+<img width="902" alt="preview" src="https://user-images.githubusercontent.com/980622/133768843-cefd742f-dc93-474f-826d-9481468e064a.png">
 
 ## Get Started (Codespaces)
 
@@ -19,8 +19,8 @@ The quickest way to test out or prototype something in [Primer ViewComponents](h
 1. Clone the project
 2. Run `bundle install`
 3. Run `rails server`
-4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-5. Go to `src/Playground.js` to start prototyping.
+4. Open [http://127.0.0.1:3000](http://127.0.0.1:3000) to view it in the browser.
+5. Go to `app/views/hello/index.html.erb` to start prototyping.
 
 ## 10 reasons why this is great
 - 🧑🏻‍💻 Get used to using Codespaces
