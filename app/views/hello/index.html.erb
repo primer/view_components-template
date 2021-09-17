@@ -1,6 +1,6 @@
 <%= render Primer::BoxComponent.new(bg: :primary, width: :full, display: :flex, justify_content: :center, align_items: :center, direction: :column,  p: 5, style: "height: 100vh") do |component| %>
         <% # HEADER %>
-        <%= render(Primer::OcticonComponent.new(icon: "mark-github")) %>
+        <%= render(Primer::OcticonComponent.new(icon: "mark-github", size: :medium, color: :icon_primary)) %>
         <% # CODING BOX %>
         <%= render Primer::BoxComponent.new(bg: :canvas_inverse, direction: :column, display: :flex, border: true, w: :full, border_color: :primary,  border_width: 1, border_radius: 2, p: 4, my: 6, style: "max-width: 600px; height: 300px") do |component| %>
             <% # CODE LINE %>
@@ -8,7 +8,7 @@
                 <%= render Primer::BoxComponent.new(display: :flex, style: "width: 20px; min-width: 20px; margin-top: 2px") do |component| %>
                     <%= render(Primer::OcticonComponent.new(icon: "check", color: :icon_tertiary)) %>
                 <% end %>
-                <%= render Primer::Beta::Text.new(tag: :p, fontSize: 1, fontFamily: :mono, ml: 2) do |component| %>
+                <%= render Primer::Beta::Text.new(font_size:5, font_family: :mono, ml: 2) do |component| %>
                     Mona's playground successfully initialised...
                 <% end %>
             <% end %>
@@ -17,20 +17,22 @@
                 <%= render Primer::BoxComponent.new(display: :flex, style: "width: 20px; min-width: 20px; margin-top: 2px") do |component| %>
                     <%= render(Primer::OcticonComponent.new(icon: "comment", color: :icon_tertiary)) %>
                 <% end %>
-                <%= render Primer::Beta::Text.new(tag: :p, fontSize: 1, fontFamily: :mono, ml: 2) do |component| %>
-                    Visit&nbsp;<%= render(Primer::Beta::Text.new(tag: :p, color: :text_warning, display: :inline_block)) { "src/Playground.js" } %>&nbsp;and start building your own layouts using Primer.
+                <%= render Primer::Beta::Text.new(font_size: 5, font_family: :mono, ml: 2) do |component| %>
+                    Visit&nbsp;<%= render(Primer::Beta::Text.new(color: :text_warning, display: :inline_block)) { "app/views/hello/index.html.erb" } %>&nbsp;and start building your own layouts using Primer.
                 <% end %>
             <% end %>
-             <%= image_tag "mona-loading.gif", width: 48, height: 48 %>
+            <%= render Primer::BoxComponent.new(ml: 3, mt: 2, display: :inline_block) do |component| %>
+                <%= image_tag "mona-loading.gif", width: 48, height: 48 %>
+            <% end %>
         <% end %>
         <% # FOOTER %>
         <%= render Primer::BoxComponent.new(text_align: :center) do |component| %>
             <%= render Primer::BoxComponent.new(mr: 2, display: :inline_block) do |component| %>
                 <%= render(Primer::OcticonComponent.new(icon: "mortar-board", color: :icon_warning, mr: 1, size: :small)) %>
-                <%= render(Primer::Beta::Text.new(tag: :p, color: :text_warning, display: :inline_block)) { "Tip" } %>
+                <%= render(Primer::Beta::Text.new(color: :text_warning, font_size: 4, display: :inline_block)) { "Tip" } %>
             <% end %>
-            <%= render Primer::Beta::Text.new(tag: :p, mr: 2, display: :inline_block) do |component| %>
-                Before you get started check out our <%= render(Primer::LinkComponent.new(href: "https://primer.style/react", target: :blank)) { "Primer React Documentation" } %>
+            <%= render Primer::Beta::Text.new(mr: 2, font_size: 4, display: :inline_block, color: :text_primary) do |component| %>
+                Before you get started check out our <%= render(Primer::LinkComponent.new(href: "https://primer.style/view-components", target: :blank)) { "Primer ViewComponents Documentation" } %>
             <% end %>
         <% end %>
 <% end %>
