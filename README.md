@@ -2,7 +2,7 @@
 
 The quickest way to test out or prototype something in [Primer ViewComponents](https://primer.style/view-components/) without having to set up a new project is by using this template. 
 
-<img width="902" alt="preview" src="https://user-images.githubusercontent.com/980622/133642956-9eba4d44-ce66-434f-afe0-a88be0104682.png">
+<img width="902" alt="Frame 1" src="https://user-images.githubusercontent.com/980622/133768843-cefd742f-dc93-474f-826d-9481468e064a.png">
 
 ## Get Started (Codespaces)
 
@@ -17,8 +17,8 @@ The quickest way to test out or prototype something in [Primer ViewComponents](h
 ## Get Started (Locally)
 
 1. Clone the project
-2. Run `yarn`
-3. Run `yarn start`
+2. Run `bundle install`
+3. Run `rails server`
 4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 5. Go to `src/Playground.js` to start prototyping.
 
@@ -28,7 +28,6 @@ The quickest way to test out or prototype something in [Primer ViewComponents](h
 - 🧖‍♀️ Prototype layouts outside the main platform
 - 🗑 No clutter on your local computer
 - 🥴 No local problems
-- 🪄 No linter or formatter issues
 - ▶️ Send over a preview link while working live on your code, no waiting for deploy previews needed.
 - 🚀 No need to set up a new project, just instantly start prototyping
 - 🧪 You want to learn Rails
