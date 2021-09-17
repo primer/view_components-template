@@ -103,6 +103,7 @@ GEM
       view_component (>= 2.0.0, < 3.0)
     puma (5.4.0)
       nio4r (~> 2.0)
+    pure-css-reset-rails (1.1.6)
     racc (1.5.2)
     rack (2.2.3)
     rack-mini-profiler (2.3.3)
@@ -197,6 +198,7 @@ DEPENDENCIES
   listen (~> 3.3)
   primer_view_components
   puma (~> 5.0)
+  pure-css-reset-rails
   rack-mini-profiler (~> 2.0)
   rails (~> 6.1.4, >= 6.1.4.1)
   sass-rails (>= 6)
