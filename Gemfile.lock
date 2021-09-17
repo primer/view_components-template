@@ -206,7 +206,6 @@ DEPENDENCIES
   sqlite3 (~> 1.4)
   turbolinks (~> 5)
   tzinfo-data
-  view_component
   web-console (>= 4.1.0)
   webpacker (~> 5.0)
 

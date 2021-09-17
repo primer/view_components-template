@@ -21,4 +21,5 @@ module PrimerRails
   end
 end
 
+require "view_component/engine"
 require "primer/view_components/engine"

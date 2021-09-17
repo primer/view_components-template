@@ -26,7 +26,6 @@ gem 'jbuilder', '~> 2.7'
 # gem 'image_processing', '~> 1.2'
 
 gem "primer_view_components"
-gem "view_component"
 
 # Reset the css styles
 gem "pure-css-reset-rails"
