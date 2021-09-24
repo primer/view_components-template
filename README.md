@@ -31,3 +31,8 @@ The quickest way to test out or prototype something in [Primer ViewComponents](h
 - ▶️ Send over a preview link while working live on your code, no waiting for deploy previews needed.
 - 🚀 No need to set up a new project, just instantly start prototyping
 - 🧪 You want to learn Rails
+
+## Useful Links
+- [🧠 Primer ViewComponents Documentation](https://primer.style/view-components/)
+- [🌈 Primer Primitives (Colors)](https://primer.style/primitives/colors)
+- [▶️ Workshop: Getting started with Codespaces for Designers](https://github.rewatch.com/video/cqjbljhwlmbfrj4n-workshop-getting-started-with-codespaces-for-designers)
