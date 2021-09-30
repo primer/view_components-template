@@ -1,6 +1,6 @@
 # Primer ViewComponents Template 🐱💎
 
-The quickest way to test out or prototype something in [Primer ViewComponents](https://primer.style/view-components/) without having to set up a new project is by using this template. 
+The quickest way to test out or prototype something in [Primer ViewComponents](https://primer.style/view-components/) without having to set up a new project.
 
 <img width="902" alt="preview" src="https://user-images.githubusercontent.com/980622/133768843-cefd742f-dc93-474f-826d-9481468e064a.png">
 
