@@ -35,4 +35,3 @@ The quickest way to test out or prototype something in [Primer ViewComponents](h
 ## Useful Links
 - [🧠 Primer ViewComponents Documentation](https://primer.style/view-components/)
 - [🌈 Primer Primitives (Colors)](https://primer.style/primitives/colors)
-- [▶️ Workshop: Getting started with Codespaces for Designers](https://github.rewatch.com/video/cqjbljhwlmbfrj4n-workshop-getting-started-with-codespaces-for-designers)
