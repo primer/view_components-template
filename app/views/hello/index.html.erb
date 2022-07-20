@@ -2,11 +2,11 @@
         <% # HEADER %>
         <%= render(Primer::OcticonComponent.new(icon: "mark-github", size: :medium, color: :default)) %>
         <% # CODING BOX %>
-        <%= render Primer::BoxComponent.new(bg: :accent, direction: :column, display: :flex, w: :full, border_radius: 2, p: 4, my: 6, style: "max-width: 600px; height: 300px") do |component| %>
+        <%= render Primer::BoxComponent.new(bg: :emphasis, direction: :column, display: :flex, w: :full, border_radius: 2, p: 4, my: 6, style: "max-width: 600px; height: 300px") do |component| %>
             <% # CODE LINE %>
             <%= render Primer::BoxComponent.new(mb: 2, color: :on_emphasis, display: :flex) do |component| %>
                 <%= render Primer::BoxComponent.new(display: :flex, style: "width: 20px; min-width: 20px; margin-top: 2px") do |component| %>
-                    <%= render(Primer::OcticonComponent.new(icon: "check", color: :muted)) %>
+                    <%= render(Primer::OcticonComponent.new(icon: "check", color: :success)) %>
                 <% end %>
                 <%= render Primer::Beta::Text.new(font_size:5, font_family: :mono, ml: 2) do |component| %>
                     Mona's playground successfully initialised...
@@ -15,7 +15,7 @@
             <% # CODE LINE %>
             <%= render Primer::BoxComponent.new(mb: 2, color: :on_emphasis, display: :flex) do |component| %>
                 <%= render Primer::BoxComponent.new(display: :flex, style: "width: 20px; min-width: 20px; margin-top: 2px") do |component| %>
-                    <%= render(Primer::OcticonComponent.new(icon: "comment", color: :muted)) %>
+                    <%= render(Primer::OcticonComponent.new(icon: "comment", color: :accent)) %>
                 <% end %>
                 <%= render Primer::Beta::Text.new(font_size: 5, font_family: :mono, ml: 2) do |component| %>
                     Visit&nbsp;<%= render(Primer::Beta::Text.new(color: :attention, display: :inline_block)) { "app/views/hello/index.html.erb" } %>&nbsp;and start building your own layouts using Primer.
